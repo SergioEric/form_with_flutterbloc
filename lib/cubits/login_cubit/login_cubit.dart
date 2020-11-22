@@ -10,7 +10,7 @@ class LoginCubit extends Cubit<LoginState> {
 
   void onChageUserName(String username) {
     assert(username != null);
-    //emit, get action a new state and rebuild the widgets thats
+    //emit a new state and rebuild the widgets that
     //needs to be render again
     emit(
       state.copyWith(

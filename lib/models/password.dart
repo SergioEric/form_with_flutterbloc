@@ -4,8 +4,8 @@ import 'package:formz/formz.dart';
 // Define input validation errors
 enum PasswordError { empty, toShort }
 
-// this is optional, but it made more clean our code
-// also, you dont have to explicit on the textField widget
+// this is optional, but it made our code cleaner,
+// also you don't have to create a new widget that listen errors
 extension NameInputErrorAsString on PasswordError {
   String get asString {
     switch (this) {
